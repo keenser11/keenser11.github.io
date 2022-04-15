@@ -4,8 +4,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, keenser">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="python与大漠插件的使用, keenser">
+    <meta name="description" content="python与大漠插件的使用Anaconda的安装使用Anaconda工具管理python的环境
+官网下载anaconda
+https://www.anaconda.com/
+安装
+
+测试安装是否成功
+cmd
+
+python 32位环境的准">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +25,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | keenser</title>
+    <title>python与大漠插件的使用 | keenser</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +317,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">python与大漠插件的使用</h1>
                 </div>
             </div>
         </div>
@@ -428,9 +436,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/python%E4%B8%8E%E5%A4%A7%E6%BC%A0%E6%8F%92%E4%BB%B6/">
+                                <span class="chip bg-color">python与大漠插件</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -463,19 +475,48 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <h2 id="python与大漠插件的使用"><a href="#python与大漠插件的使用" class="headerlink" title="python与大漠插件的使用"></a>python与大漠插件的使用</h2><h3 id="Anaconda的安装"><a href="#Anaconda的安装" class="headerlink" title="Anaconda的安装"></a>Anaconda的安装</h3><p>使用Anaconda工具管理python的环境</p>
+<p>官网下载anaconda</p>
+<p><a target="_blank" rel="noopener" href="https://www.anaconda.com/">https://www.anaconda.com/</a></p>
+<p>安装</p>
+<p><img src="/2022/04/15/python-yu-da-mo-cha-jian-de-shi-yong/image-20220415151339249.png" alt="image-20220415151339249"></p>
+<p>测试安装是否成功</p>
+<p>cmd</p>
+<p><img src="/2022/04/15/python-yu-da-mo-cha-jian-de-shi-yong/image-20220415151507224.png" alt="image-20220415151507224"></p>
+<h3 id="python-32位环境的准备"><a href="#python-32位环境的准备" class="headerlink" title="python 32位环境的准备"></a>python 32位环境的准备</h3><p>因为大漠插件只能支持32位python</p>
+<p>安装的是64位的conda，所以默认的python，甚至默认的虚拟环境也是 64 位的，通过百度，得知win10 有一个32 位的模式，先切换到32位模式：</p>
+<p>set CONDA_FORCE_32BIT=1</p>
+<p>切换成功不会有任何的提示信息</p>
+<p>创建python环境</p>
+<p>我这里使用3.7</p>
+<p>conda create -n 你的虚拟环境名称 python=x.x</p>
+<p>创建完成后，就可以关闭系统的32位模式</p>
+<p>set CONDA_FORCE_32BIT=0</p>
+<h3 id="pycharm的conda-python虚拟环境使用"><a href="#pycharm的conda-python虚拟环境使用" class="headerlink" title="pycharm的conda python虚拟环境使用"></a>pycharm的conda python虚拟环境使用</h3><p><img src="/2022/04/15/python-yu-da-mo-cha-jian-de-shi-yong/image-20220415152203437.png" alt="image-20220415152203437"></p>
+<p><img src="/2022/04/15/python-yu-da-mo-cha-jian-de-shi-yong/image-20220415152244417.png" alt="image-20220415152244417"></p>
+<h3 id="大漠插件的安装"><a href="#大漠插件的安装" class="headerlink" title="大漠插件的安装"></a>大漠插件的安装</h3><p>下载大漠工具包</p>
+<p>dm3.1233</p>
+<p>这里使用的版本是最后免费版本，之后的版本是收费版本</p>
+<p><img src="/2022/04/15/python-yu-da-mo-cha-jian-de-shi-yong/image-20220415152357703.png" alt="image-20220415152357703"></p>
+<p>注册dm.dll</p>
+<p>管理员运行cmd（也可直接执行“注册大漠插件到系统.bat”）</p>
+<p>regsvr32 dm.dll</p>
+<p><img src="/2022/04/15/python-yu-da-mo-cha-jian-de-shi-yong/image-20220415152630104.png" alt="image-20220415152630104"></p>
+<h3 id="大漠综合工具之取色识字（字库）"><a href="#大漠综合工具之取色识字（字库）" class="headerlink" title="大漠综合工具之取色识字（字库）"></a>大漠综合工具之取色识字（字库）</h3><p>抓图</p>
+<p><img src="/2022/04/15/python-yu-da-mo-cha-jian-de-shi-yong/image-20220415152805789.png" alt="image-20220415152805789"></p>
+<p>取字色（勾选生效）</p>
+<p><img src="/2022/04/15/python-yu-da-mo-cha-jian-de-shi-yong/image-20220415152839761.png" alt="image-20220415152839761"></p>
+<p>字色多种颜色可设定区间值（偏色）</p>
+<p><img src="/2022/04/15/python-yu-da-mo-cha-jian-de-shi-yong/image-20220415152916762.png" alt="image-20220415152916762"></p>
+<p>提取点阵（单个，多个）</p>
+<p><img src="/2022/04/15/python-yu-da-mo-cha-jian-de-shi-yong/image-20220415152955781.png" alt="image-20220415152955781"></p>
+<p>定义文字，回车添加到字库（字库可自行新建）</p>
+<p><img src="/2022/04/15/python-yu-da-mo-cha-jian-de-shi-yong/image-20220415153048266.png" alt="image-20220415153048266"></p>
+<h3 id="python大漠插件的使用"><a href="#python大漠插件的使用" class="headerlink" title="python大漠插件的使用"></a>python大漠插件的使用</h3><p>安装pywin32</p>
+<p><img src="/2022/04/15/python-yu-da-mo-cha-jian-de-shi-yong/image-20220415153256065.png" alt="image-20220415153256065"></p>
+<p>引入与调用</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># This is a sample Python script.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Press Shift+F10 to execute it or replace it with your code.</span></span><br><span class="line"><span class="comment"># Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> win32com.client</span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用大漠插件</span></span><br><span class="line">dm = win32com.client.Dispatch(<span class="string">&quot;dm.dmsoft&quot;</span>)</span><br><span class="line"><span class="comment"># 设定字库文件，建议在初始化中调用，比较耗时</span></span><br><span class="line">dm.setDict(<span class="number">0</span>, <span class="string">&quot;D:/PycharmProjects/tools/dmzk/三国塔防字库.txt&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_hi</span>(<span class="params">name</span>):</span></span><br><span class="line">    <span class="built_in">print</span>(dm.ver())</span><br><span class="line">    <span class="comment"># 使用字库</span></span><br><span class="line">    dm.useDict(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    函数原型:</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    string FindStrEx(x1,y1,x2,y2,string,color_format,sim)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    参数定义:</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    x1 整形数:区域的左上X坐标</span></span><br><span class="line"><span class="string">    y1 整形数:区域的左上Y坐标</span></span><br><span class="line"><span class="string">    x2 整形数:区域的右下X坐标</span></span><br><span class="line"><span class="string">    y2 整形数:区域的右下Y坐标</span></span><br><span class="line"><span class="string">    string 字符串:待查找的字符串, 可以是字符串组合，比如&quot;长安|洛阳|大雁塔&quot;,中间用&quot;|&quot;来分割字符串</span></span><br><span class="line"><span class="string">    color_format 字符串:颜色格式串, 可以包含换行分隔符,语法是&quot;,&quot;后加分割字符串. 具体可以查看下面的示例.注意，RGB和HSV格式都支持.</span></span><br><span class="line"><span class="string">    sim 双精度浮点数:相似度,取值范围0.1-1.0</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># ret = dm.FindStrFastE(157,695,424,714, &quot;司马懿&quot;, &quot;e6e0d2-c1a984&quot;, 0.9)</span></span><br><span class="line">    ret = dm.FindStrFastE(<span class="number">157</span>,<span class="number">695</span>,<span class="number">424</span>,<span class="number">714</span>, <span class="string">&quot;孙坚&quot;</span>, <span class="string">&quot;e6e0d2-c1a984&quot;</span>, <span class="number">0.9</span>)</span><br><span class="line"></span><br><span class="line">    ret = ret.split(<span class="string">&quot;|&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(ret[<span class="number">0</span>])</span><br><span class="line">    <span class="keyword">if</span> ret[<span class="number">0</span>] == <span class="string">&#x27;0&#x27;</span>:</span><br><span class="line">        <span class="built_in">print</span> (<span class="string">&quot;find the word&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Press the green button in the gutter to run the script.</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    print_hi(<span class="string">&#x27;PyCharm&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># See PyCharm help at https://www.jetbrains.com/help/pycharm/</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
                 
             </div>
@@ -539,7 +580,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/python%E4%B8%8E%E5%A4%A7%E6%BC%A0%E6%8F%92%E4%BB%B6/">
+                                    <span class="chip bg-color">python与大漠插件</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -711,11 +756,12 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/04/15/hello-world/">
+                <a href="/2022/04/15/python-yu-da-mo-cha-jian-de-shi-yong/">
                     <div class="card-image">
                         
                         
@@ -731,9 +777,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -742,6 +788,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -760,13 +807,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/01/17/windows-huan-jing-xia-xiu-gai-mysql-wu-fa-shi-yong-yuan-cheng-ip-lian-jie-wen-ti/">
+                <a href="/2022/04/15/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="windows环境下修改mysql无法使用远程Ip连接问题">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">windows环境下修改mysql无法使用远程Ip连接问题</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -777,7 +824,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-15
                             </span>
                         <span class="publish-author">
                             
@@ -786,14 +833,6 @@
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/mysql/">
-                        <span class="chip bg-color">mysql</span>
-                    </a>
-                    
                 </div>
                 
             </div>
